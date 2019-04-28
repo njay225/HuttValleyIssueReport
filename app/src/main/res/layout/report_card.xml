@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/reportCardRelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="false"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="5dp"
+    android:background="@android:color/white"
+    android:elevation="2dp"
+    android:maxHeight="150dp"
+    android:paddingBottom="8dp"
+    android:translationZ="2dp"
+    app:layout_anchorGravity="center_horizontal">
+
+    <!--DESIGN 1
+
+    <TextView
+        android:id="@+id/votesTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/categoryTextView"
+        android:layout_alignBottom="@+id/categoryTextView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="14dp"
+        android:text="Votes"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/categoryTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="9dp"
+        android:text="category"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/categoryTextView"
+        android:layout_below="@+id/categoryTextView"
+        android:layout_marginTop="3dp"
+        android:text="Report Title"
+        android:textColor="@android:color/white"
+        android:textSize="21sp" />
+
+    <TextView
+        android:id="@+id/locationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/titleTextView"
+        android:layout_centerVertical="true"
+        android:text="Location"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/descriptionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/locationTextView"
+        android:layout_below="@+id/locationTextView"
+        android:layout_marginTop="8dp"
+        android:text="Description......................................."
+        android:textColor="@android:color/white"
+        android:layout_above="@+id/dateTextView"
+        android:layout_marginBottom="8dp"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/dateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/descriptionTextView"
+        android:layout_marginBottom="8dp"
+        android:text="Date Added"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/voteIconImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="9dp"
+        android:layout_marginTop="5dp"
+        android:layout_toStartOf="@+id/votesTextView"
+        app:srcCompat="@drawable/report_trending_flat" />
+
+</RelativeLayout>-->
+
+    <!-- DESIGN 2-->
+    <TextView
+        android:id="@+id/votesTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/categoryTextView"
+        android:layout_alignBottom="@+id/categoryTextView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="14dp"
+        android:text="Votes"
+        android:textColor="?android:attr/colorButtonNormal" />
+
+    <TextView
+        android:id="@+id/categoryTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="9dp"
+        android:text="category"
+        android:textColor="?android:attr/colorButtonNormal" />
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/categoryTextView"
+        android:layout_below="@+id/categoryTextView"
+        android:layout_marginTop="8dp"
+        android:text="Report Title"
+        android:textColor="?android:attr/colorButtonNormal"
+        android:textSize="21sp" />
+
+    <TextView
+        android:id="@+id/locationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/titleTextView"
+        android:layout_below="@+id/titleTextView"
+        android:layout_marginTop="8dp"
+        android:text="Location"
+        android:textColor="?android:attr/colorButtonNormal"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/dateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/locationTextView"
+        android:layout_below="@+id/locationTextView"
+        android:layout_marginTop="10dp"
+        android:text="Date Added"
+        android:textColor="?android:attr/colorButtonNormal"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/voteIconImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="9dp"
+        android:layout_marginTop="5dp"
+        android:layout_toStartOf="@+id/votesTextView"
+        app:srcCompat="@drawable/report_trending_flat" />
+
+</RelativeLayout>
+
+
+

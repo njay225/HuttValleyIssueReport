@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Primary Colours-->
+
+    <color name="colorPrimary">#388e3c</color>
+    <color name="colorPrimaryDark">#00600f</color>
+    <color name="colorPrimaryLight">#69bf6d</color>
+
+    <!--Accent Colours-->
+
+    <color name="colorAccent">#0097a7</color>
+    <color name="colorAccentDark">#006978</color>
+    <color name="colorAccentLight">#36c8d8</color>
+
+    <!--Very Urgent Colour-->
+    <color name="veryUrgent">#d32f2f</color>
+    <color name="listViewBackground">#00ffffff</color>
+
+    <color name="white">#ffffff</color>
+    <color name="resolvedReport">#e7ffe8</color>
+</resources>

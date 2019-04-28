@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <!--Used for Buttons and Spinners-->
+
+    <!--Setting Border Radius-->
+    <corners android:radius="2dip"/>
+
+    <!--Setting Width and Colour of Border-->
+    <stroke android:width="1dp" android:color="@color/colorPrimary"/>
+
+    <!--Setting Fill Colour-->
+    <solid android:color="#ffffff" />
+
+</shape>

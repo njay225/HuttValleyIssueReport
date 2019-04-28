@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/top_group">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home_icon"
+            android:title="@string/nav_home" />
+        <item
+            android:id="@+id/nav_my_reports"
+            android:icon="@drawable/my_reports_icon"
+            android:title="@string/nav_my_reports" />
+        <item
+            android:id="@+id/nav_my_votes"
+            android:icon="@drawable/my_votes_icons"
+            android:title="@string/nav_my_votes" />
+        <item
+            android:id="@+id/nav_saved_reports"
+            android:icon="@drawable/saved_reports_icon"
+            android:title="@string/nav_saved_reports"/>
+        <item
+            android:id="@+id/nav_resolved_issues"
+            android:icon="@drawable/resolved_issues_icon"
+            android:title="@string/nav_resolved_reports" />
+    </group>
+
+    <group android:id="@+id/middle_group">
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/contact_icon"
+            android:title="@string/nav_contact" />
+        <item
+            android:id="@+id/nav_feedback"
+            android:icon="@drawable/feedback_icon"
+            android:title="@string/nav_feedback" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/settings_icon"
+            android:title="@string/nav_settings"/>
+    </group>
+
+    <group android:id="@+id/bottom_group">
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout_icon"
+            android:title="@string/nav_logout"/>
+    </group>
+
+
+</menu>

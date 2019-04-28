@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/reportViewRelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:backgroundTint="@android:color/background_light"
+    tools:context="com.example.school.huttvalleyissuereport.ReportViewActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/voteTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/voteButton"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:paddingBottom="8dp"
+                android:text="Votes: "
+                android:textColor="@color/colorPrimary" />
+
+            <Button
+                android:id="@+id/voteButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/map"
+                android:layout_alignStart="@+id/map"
+                android:layout_below="@+id/addressTextView"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/primary_border"
+                android:text="Vote"
+                android:textColor="?attr/colorPrimary" />
+
+            <RelativeLayout
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/mediumTextRelativeLayout"
+                android:layout_gravity="center_vertical"
+                android:layout_below="@+id/titleTextView"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:id="@+id/categoryTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/urgencyTextView"
+                    android:layout_alignBottom="@+id/urgencyTextView"
+                    android:layout_marginRight="8dp"
+                    android:layout_alignParentLeft="true"
+                    android:text="TextView"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/urgencyTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentRight="true"
+                    android:text="TextView"
+                    android:textColor="@color/veryUrgent"
+                    android:textSize="18sp"
+                    android:textAlignment="center"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/creatorTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="8dp"
+                android:text="TextView"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:layout_below="@+id/mediumTextRelativeLayout"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/descriptionTextView"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/creatorTextView"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:text="TextView"
+                android:textColor="@color/colorPrimary"
+                android:textAlignment="center"/>
+
+            <fragment
+                android:id="@+id/map"
+                class="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="225dp"
+                android:layout_alignEnd="@+id/descriptionTextView"
+                android:layout_alignStart="@+id/descriptionTextView"
+                android:layout_below="@+id/descriptionTextView"
+                tools:context="com.example.school.huttvalleyissuereport.ReportViewActivity" />
+
+            <TextView
+                android:id="@+id/addressTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/map"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:text="TextView"
+                android:textColor="@color/colorPrimary"
+                android:layout_alignEnd="@+id/map"
+                android:layout_alignStart="@+id/map"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/titleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fileScrollView"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="8dp"
+                android:text="TextView"
+                android:textColor="@color/colorPrimary"
+                android:textSize="24sp" />
+
+            <HorizontalScrollView
+                android:id="@+id/fileScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:id="@+id/fileLinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:orientation="horizontal" />
+            </HorizontalScrollView>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

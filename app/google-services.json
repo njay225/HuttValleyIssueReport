@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "975325284245",
+    "firebase_url": "https://hutt-valley-issue-report.firebaseio.com",
+    "project_id": "hutt-valley-issue-report",
+    "storage_bucket": "hutt-valley-issue-report.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:975325284245:android:248f84204dc7daeb",
+        "android_client_info": {
+          "package_name": "com.example.school.huttvalleyissuereport"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "975325284245-l30unsh2ni4eknod2eiqj02q7giqj9bc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.school.huttvalleyissuereport",
+            "certificate_hash": "4edf667cd825d4340bc7ed7df0cc2ad83e76e337"
+          }
+        },
+        {
+          "client_id": "975325284245-440g8oek12v5fekq7eurhr8fth3rrole.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWdPRjwdBfD5oiVW7Q-Dth_Nm7auSQ8Go"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "975325284245-440g8oek12v5fekq7eurhr8fth3rrole.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

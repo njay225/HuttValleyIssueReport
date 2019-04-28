@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.school.huttvalleyissuereport.UserInfo">
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="false"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="23dp"
+        android:indeterminate="true"
+        android:visibility="gone" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:fitsSystemWindows="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/userNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="21dp"
+                android:text="User Name"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/reportsMadeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/userNameTextView"
+                android:layout_below="@+id/userNameTextView"
+                android:layout_marginTop="8dp"
+                android:text="Reports Made: "
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/votesMadeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/reportsMadeTextView"
+                android:layout_below="@+id/reportsMadeTextView"
+                android:layout_marginTop="8dp"
+                android:text="Votes Made: "
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/mostPopularReportTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/votesMadeTextView"
+                android:layout_below="@+id/votesMadeTextView"
+                android:layout_marginTop="16dp"
+                android:text="Most Popular Report"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp" />
+
+            <RelativeLayout
+                android:id="@+id/mostPopularReportRelativeLayout"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/mostPopularReportTextView"
+                android:layout_below="@+id/mostPopularReportTextView"
+                android:layout_marginTop="8dp">
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/mostRecentReportTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/mostPopularReportRelativeLayout"
+                android:layout_below="@+id/mostPopularReportRelativeLayout"
+                android:layout_marginTop="8dp"
+                android:text="Most Recent Report"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp" />
+
+            <RelativeLayout
+                android:id="@+id/mostRecentReportRelativeLayout"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/mostPopularReportRelativeLayout"
+                android:layout_below="@+id/mostRecentReportTextView"
+                android:layout_marginTop="8dp"/>
+
+            <Button
+                android:id="@+id/editAccountButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/mostPopularReportRelativeLayout"
+                android:layout_alignStart="@+id/mostPopularReportRelativeLayout"
+                android:layout_below="@+id/mostRecentReportRelativeLayout"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/primary_border"
+                android:text="Edit Account Details"
+                android:textColor="@color/colorPrimary" />
+
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</RelativeLayout>

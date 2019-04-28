@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/phoneAuthUserNameEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phoneAuthUserNameTitleTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="36sp" />
+
+    <Button
+        android:id="@+id/confirmButton"
+        style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/phoneAuthUserNameEditText"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Confirm"
+        android:textColor="@color/colorPrimary" />
+
+    <Button
+        android:id="@+id/cancelButton"
+        style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:textColor="@color/colorPrimary"
+        android:visibility="invisible"
+        android:layout_alignBaseline="@+id/confirmButton"
+        android:layout_alignBottom="@+id/confirmButton"
+        android:layout_toStartOf="@+id/confirmButton" />
+
+    <TextView
+        android:id="@+id/phoneAuthUserNameTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="Please Enter the Validation Code"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp" />
+</RelativeLayout>

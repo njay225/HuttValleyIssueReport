@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>\
+    <integer name="most_popular_length">100</integer>
+    <integer name="file_upload_limit">3</integer>
+    <integer name="video_upload_limit">1</integer>
+
+    <integer name="home_fragments_total">2</integer>
+    <integer name="user_view_fragments_total">3</integer>
+
+    <integer name="phone_auth_timeout">60</integer>
+
+    <integer name="report_trending_limit">1000</integer>
+
+
+
+</resources>

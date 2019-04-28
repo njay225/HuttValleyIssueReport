@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:elevation="20dp"
+    android:orientation="vertical"
+    android:paddingLeft="50dp"
+    android:paddingRight="50dp"
+    android:paddingTop="20dp">
+
+
+    <TextView
+        android:id="@+id/searchTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Search"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/keywordTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/searchTextView"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Keyword"
+        android:textColor="@color/colorPrimary" />
+
+    <EditText
+        android:id="@+id/keywordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/keywordTextView"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <FrameLayout
+        android:id="@+id/categoryFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/keywordEditText"
+        android:layout_below="@+id/keywordEditText"
+        android:layout_marginTop="5dp">
+
+        <Spinner
+            android:id="@+id/categorySpinner"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_alignStart="@+id/keywordEditText"
+            android:layout_below="@+id/keywordEditText"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/primary_border" />
+
+        <ImageView
+            android:id="@+id/categoryDropDownImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|end"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            app:srcCompat="@drawable/spinner_dropdown_icon" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/urgencyFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/keywordEditText"
+        android:layout_below="@+id/categoryFrameLayout"
+        android:layout_marginTop="5dp">
+
+        <Spinner
+            android:id="@+id/urgencySpinner"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_alignStart="@+id/keywordEditText"
+            android:layout_below="@+id/categoryFrameLayout"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/primary_border" />
+
+        <ImageView
+            android:id="@+id/urgencyDropDownImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|end"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            app:srcCompat="@drawable/spinner_dropdown_icon" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/locationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/urgencyFrameLayout"
+        android:layout_marginTop="8dp"
+        android:text="Location"
+        android:textColor="@color/colorPrimary" />
+
+    <EditText
+        android:id="@+id/locationEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/locationTextView"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/locationEditText"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:id="@+id/dateFromTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/dateFromEditText"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="5dp"
+            android:text="From"
+            android:textColor="@color/colorPrimary" />
+
+        <EditText
+            android:id="@+id/dateFromEditText"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/dateFromTextView"
+            android:clickable="true"
+            android:editable="false"
+            android:ems="10"
+            android:focusable="false"
+            android:inputType="none"
+            android:longClickable="false" />
+
+        <TextView
+            android:id="@+id/dateToTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/dateFromTextView"
+            android:layout_alignBottom="@+id/dateFromTextView"
+            android:layout_toLeftOf="@+id/dateToEditText"
+            android:text="To  "
+            android:textColor="@color/colorPrimary" />
+
+        <EditText
+            android:id="@+id/dateToEditText"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:clickable="true"
+            android:editable="false"
+            android:ems="10"
+            android:focusable="false"
+            android:inputType="none"
+            android:longClickable="false" />
+
+    </RelativeLayout>
+</RelativeLayout>

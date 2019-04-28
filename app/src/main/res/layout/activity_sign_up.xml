@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    tools:context="com.example.school.huttvalleyissuereport.SignUpActivity">
+
+    <EditText
+        android:id="@+id/userNameEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="55dp"
+        android:contentDescription="Enter Username"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp" />
+
+    <TextView
+        android:id="@+id/userNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/userNameEditText"
+        android:layout_alignStart="@+id/userNameEditText"
+        android:layout_below="@+id/signUpTitleTextView"
+        android:layout_marginBottom="42dp"
+        android:contentDescription="Username Title"
+        android:text="Username"
+        android:textColor="@color/colorPrimary" />
+
+    <EditText
+        android:id="@+id/emailPhoneEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/emailPhoneTextView"
+        android:layout_below="@+id/emailPhoneTextView"
+        android:contentDescription="Enter your Email or Phone Number"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp" />
+
+    <TextView
+        android:id="@+id/userNameHelperTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/userNameEditText"
+        android:layout_alignStart="@+id/userNameEditText"
+        android:layout_below="@+id/userNameEditText"
+        android:textColor="@android:color/holo_red_dark" />
+
+    <TextView
+        android:id="@+id/emailPhoneTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/userNameHelperTextView"
+        android:layout_below="@+id/userNameHelperTextView"
+        android:layout_marginTop="8dp"
+        android:contentDescription="Email or Phone Title"
+        android:text="Email or Phone"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/emailPhoneHelperTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/emailPhoneEditText"
+        android:layout_alignStart="@+id/emailPhoneEditText"
+        android:layout_below="@+id/emailPhoneEditText"
+        android:layout_marginBottom="8dp"
+        android:textColor="@android:color/holo_red_dark" />
+
+    <RelativeLayout
+        android:id="@+id/passwordRelativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailPhoneHelperTextView"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/passwordTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/passwordEditText"
+            android:layout_marginTop="8dp"
+            android:contentDescription="Password Title"
+            android:text="Password"
+            android:textColor="@color/colorPrimary" />
+
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/passwordTextView"
+            android:contentDescription="Enter Your Password"
+            android:ems="10"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:id="@+id/passwordHelperTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/passwordEditText"
+            android:layout_alignStart="@+id/passwordEditText"
+            android:layout_below="@+id/passwordEditText"
+            android:textColor="@android:color/holo_red_dark" />
+
+        <TextView
+            android:id="@+id/reenterPasswordTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/passwordHelperTextView"
+            android:layout_below="@+id/passwordHelperTextView"
+            android:layout_marginTop="8dp"
+            android:text="Reenter Password"
+            android:textColor="@color/colorPrimary" />
+
+        <EditText
+            android:id="@+id/reenterPasswordEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/reenterPasswordTextView"
+            android:layout_below="@+id/reenterPasswordTextView"
+            android:contentDescription="Reenter Password"
+            android:ems="10"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:id="@+id/reenterPasswordHelperTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/reenterPasswordEditText"
+            android:layout_alignStart="@+id/reenterPasswordEditText"
+            android:layout_below="@+id/reenterPasswordEditText"
+            android:contentDescription="Reenter Password Title"
+            android:textColor="@android:color/holo_red_dark" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/signUpButton"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_alignEnd="@+id/passwordRelativeLayout"
+        android:layout_alignStart="@+id/passwordRelativeLayout"
+        android:layout_below="@+id/emailPhoneHelperTextView"
+        android:background="@drawable/primary_border"
+        android:contentDescription="Sign Up Button"
+        android:text="Sign UP"
+        android:textColor="@color/colorPrimary" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:elevation="2dp"
+        android:indeterminate="true"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/signUpTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/userNameTextView"
+        android:layout_marginBottom="12dp"
+        android:contentDescription="Sign Up Title"
+        android:text="Sign Up"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/alreadyMemberTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/signUpButton"
+        android:layout_below="@+id/signUpButton"
+        android:layout_marginTop="8dp"
+        android:contentDescription="Already a Button LInk"
+        android:text="Already A Member?"
+        android:textColor="@color/colorAccent" />
+
+</RelativeLayout>

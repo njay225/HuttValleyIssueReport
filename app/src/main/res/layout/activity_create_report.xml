@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.school.huttvalleyissuereport.CreateReportActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/titleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/titleEditText"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="20dp"
+                android:text="Title"
+                android:textColor="@color/colorPrimary"
+                tools:layout_editor_absoluteX="36dp"
+                tools:layout_editor_absoluteY="40dp" />
+
+            <EditText
+                android:id="@+id/titleEditText"
+                android:layout_width="350dp"
+                android:layout_height="41dp"
+                android:layout_below="@+id/titleTextView"
+                android:layout_centerHorizontal="true"
+                android:ems="10"
+                android:inputType="textCapWords|textPersonName"
+                tools:layout_editor_absoluteX="36dp"
+                tools:layout_editor_absoluteY="57dp" />
+
+            <TextView
+                android:id="@+id/titleHelperTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@id/titleEditText"
+                android:layout_alignStart="@id/titleEditText"
+                android:layout_below="@id/titleEditText"
+                android:layout_marginBottom="8dp"
+                android:textColor="@android:color/holo_red_dark" />
+
+            <FrameLayout
+                android:id="@+id/categoryFrameLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/titleEditText"
+                android:layout_below="@+id/titleHelperTextView"
+                android:layout_marginTop="5dp">
+
+                <Spinner
+                    android:id="@+id/categorySpinner"
+                    android:layout_width="170dp"
+                    android:layout_height="36dp"
+                    android:layout_alignStart="@+id/titleEditText"
+                    android:layout_below="@+id/titleEditText"
+                    android:background="@drawable/primary_border" />
+
+                <ImageView
+                    android:id="@+id/categoryDropDownImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="8dp"
+                    app:srcCompat="@drawable/spinner_dropdown_icon" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/urgencyFrameLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/titleEditText"
+                android:layout_below="@+id/titleHelperTextView"
+                android:layout_marginTop="5dp">
+
+                <Spinner
+                    android:id="@+id/urgencySpinner"
+                    android:layout_width="170dp"
+                    android:layout_height="36dp"
+                    android:layout_alignBaseline="@+id/categorySpinner"
+                    android:layout_alignBottom="@+id/categorySpinner"
+                    android:layout_alignEnd="@+id/titleEditText"
+                    android:background="@drawable/primary_border" />
+
+                <ImageView
+                    android:id="@+id/urgencyDropDownImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="8dp"
+                    app:srcCompat="@drawable/spinner_dropdown_icon" />
+
+            </FrameLayout>
+
+            <EditText
+                android:id="@+id/descriptionEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_alignEnd="@+id/urgencyFrameLayout"
+                android:layout_alignStart="@+id/categoryFrameLayout"
+                android:layout_below="@+id/urgencyFrameLayout"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/primary_border"
+                android:ems="10"
+                android:gravity="top"
+                android:hint="Description"
+                android:inputType="textCapSentences|textMultiLine"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/descriptionHelperTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@id/descriptionEditText"
+                android:layout_alignStart="@id/descriptionEditText"
+                android:layout_below="@id/descriptionEditText"
+                android:layout_marginBottom="8dp"
+                android:textColor="@android:color/holo_red_dark" />
+
+            <EditText
+                android:id="@+id/locationTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/descriptionEditText"
+                android:layout_alignStart="@+id/descriptionEditText"
+                android:layout_below="@+id/descriptionHelperTextView"
+                android:ems="10"
+                android:hint="Location"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/locationHelperTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@id/locationTextView"
+                android:layout_alignStart="@id/locationTextView"
+                android:layout_below="@id/locationTextView"
+                android:layout_marginBottom="8dp"
+                android:textColor="@android:color/holo_red_dark" />
+
+            <Button
+                android:id="@+id/addLocationButton"
+                android:layout_width="160dp"
+                android:layout_height="36dp"
+                android:layout_below="@+id/locationHelperTextView"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/primary_border"
+                android:text="Add Location"
+                android:textColor="@color/colorPrimary" />
+
+            <Button
+                android:id="@+id/uploadFileButton"
+                android:layout_width="160dp"
+                android:layout_height="36dp"
+                android:layout_alignStart="@+id/addLocationButton"
+                android:layout_below="@+id/fileUploadHelperTextView"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/primary_border"
+                android:text="Upload File"
+                android:textColor="@color/colorPrimary" />
+
+            <HorizontalScrollView
+                android:id="@+id/fileScrollView"
+                android:layout_width="160dp"
+                android:layout_height="150dp"
+                android:layout_alignEnd="@+id/descriptionEditText"
+                android:layout_alignStart="@+id/createReportButton"
+                android:layout_below="@+id/addLocationButton"
+                android:layout_marginTop="8dp"
+                android:background="@android:color/darker_gray"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:id="@+id/fileLinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:orientation="horizontal" />
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/fileUploadHelperTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@id/fileScrollView"
+                android:layout_alignStart="@id/fileScrollView"
+                android:layout_below="@id/fileScrollView"
+                android:layout_marginBottom="8dp"
+                android:textColor="@android:color/holo_red_dark" />
+
+            <Button
+                android:id="@+id/createReportButton"
+                android:layout_width="300dp"
+                android:layout_height="36dp"
+                android:layout_alignEnd="@+id/descriptionEditText"
+                android:layout_alignStart="@+id/descriptionEditText"
+                android:layout_below="@id/uploadFileButton"
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/primary_border"
+                android:text="Finish Report"
+                android:textColor="@color/colorPrimary" />
+
+            <Button
+                android:id="@+id/saveReportButton"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_alignEnd="@+id/createReportButton"
+                android:layout_alignStart="@+id/createReportButton"
+                android:layout_below="@+id/createReportButton"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/primary_border"
+                android:text="Save Report"
+                android:textColor="@color/colorPrimary" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_above="@+id/locationHelperTextView"
+                android:layout_centerHorizontal="true"
+                android:indeterminate="true"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
