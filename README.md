@@ -1,4 +1,4 @@
-# HuttValleyIssueReport
+# Report Finder
 Android Application which lets people report issues within their community and vote for issues which have already been posted 
 to help quantify the effect of issues
 
